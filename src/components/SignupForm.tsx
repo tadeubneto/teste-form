@@ -2,8 +2,9 @@
 import React, { useState } from "react";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { Loader2 } from "lucide-react";
+import { Loader } from "lucide-react";
 import { UserData, FormErrors } from "@/app/types";
+
 
 
 
@@ -200,7 +201,7 @@ const SignupForm = () => {
                     >
                         {isLoading ? (
                             <>
-                                <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+                                <Loader className="w-4 h-4 mr-2 animate-spin"/>
                                 Processando...
                             </>
                         ) : (
